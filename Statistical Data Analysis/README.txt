@@ -1,4 +1,4 @@
-Main Objective: To apply data sorting algorithms for statistical analysis of data series. Specific objectives include finding minimum and maximum values, calculating median, quartiles, and deciles, identifying most frequent and distinct values, and comparing algorithm efficiency.
+Main Objective: The program aims to apply various data sorting algorithms to perform statistical analysis on data series. It specifically focuses on finding the minimum and maximum values, calculating the median, quartiles, and deciles, and identifying the most frequent and distinct values. Two prominent sorting algorithms used for these tasks are AVL Trees and Heap Sort. Efficiency and time complexity are also measured to evaluate the algorithms' performance.
 
 Programming:
 The program is made in C using standard libraries like stdio.h, stdlib.h, math.h, and time.h. Only the clock() function is recommended for time measurement.
@@ -89,7 +89,7 @@ Details:
 
 		Uses auxiliary array to count occurrences.
 		Sorts based on count.
-		
+
 	Time Measurement:
 
 		Uses time.h and clock() for measuring time.
