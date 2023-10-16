@@ -4,10 +4,10 @@ Programming:
 The program is made in C using standard libraries like stdio.h, stdlib.h, math.h, and time.h. Only the clock() function is recommended for time measurement.
 
 Data Files:
-The files behave on the following manner:
-	A: Scientific Notation (example 123123123e7)
-	B: Floating Points (example 2.4)
-	C: Scientific Notation (example 123123e+4)
+	The files behave on the following manner:
+		A: Scientific Notation (example 123123123e7)
+		B: Floating Points (example 2.4)
+		C: Scientific Notation (example 123123e+4)
 
 Functions:
 
@@ -58,3 +58,40 @@ Functions:
 		most_repeated_l(): Finds most repeated value in list_type.
 		most_repeated_m(): Finds most repeated value in heap.
 
+Details:
+
+	File Handling:
+
+		Uses lista struct to read file.
+		Struct has double *numero and long largo.
+		User inputs file name; program checks if file exists and reads its length.
+
+	Program Usage:
+
+		Prompts for file name.
+		Main menu offers sorting methods and statistical analysis.
+		AVL sorting doesn't include analysis.
+		Results not immediately displayed due to large datasets.
+
+	Sorting Methods:
+
+		Mergesort: Splits lists, compares, merges.
+		Quicksort: Uses pivot, sorts using swap().
+		Montículo (Heap): Built from file list, sorts numbers, moves largest to top.
+
+	AVL Tree:
+
+		Uses AVL struct.
+		Inserts one by one, compares height, performs rotations.
+		Duplicate numbers are not inserted.
+
+	Counting Sort:
+
+		Uses auxiliary array to count occurrences.
+		Sorts based on count.
+		
+	Time Measurement:
+
+		Uses time.h and clock() for measuring time.
+		Time is in milliseconds for precision.
+		Time recorded before displaying results to avoid skew.
